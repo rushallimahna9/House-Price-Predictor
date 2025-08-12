@@ -7,8 +7,7 @@ import pickle
 # Load Kaggle dataset
 df = pd.read_csv("train.csv")
 
-# We'll keep only relevant columns for a simple model
-# Example: 'GrLivArea' (Living area in sq ft), 'BedroomAbvGr', 'FullBath'
+# We'll onky keep the relevant columns.
 df = df[['GrLivArea', 'BedroomAbvGr', 'FullBath', 'SalePrice']]
 
 # Features and target
